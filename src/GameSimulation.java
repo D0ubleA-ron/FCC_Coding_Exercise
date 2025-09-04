@@ -33,7 +33,7 @@ public class GameSimulation {
 
     private void printProbabilities(){
         for(int i = 0; i < scoreStorage.length; i++){
-            System.out.println("Total " + i + " occurs " + ((float) getScoreStorage()[i] / getSimAmount()) + " occured " + (float)getScoreStorage()[i] + " times");
+            System.out.println("Total " + i + " occurs " + ((float) getScoreStorage()[i] / getSimAmount()) + " occured " + (float)getScoreStorage()[i] + " times.");
         }
     }
 
