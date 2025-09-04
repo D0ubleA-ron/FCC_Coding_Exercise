@@ -1,7 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Game game = new Game(5);
-        game.runGame();
-        System.out.println(game.getScore());
+        GameSimulation sim = new GameSimulation(5, 100000);
+        sim.printHeader();
     }
 }
