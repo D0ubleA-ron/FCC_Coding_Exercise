@@ -1,8 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        Dice dice = new Dice();
-        System.out.println(dice.getValue());
-        dice.rollDice();
-        System.out.println(dice.getValue());
+        Game game = new Game(5);
+        game.runGame();
+        System.out.println(game.getScore());
     }
 }

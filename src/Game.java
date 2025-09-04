@@ -65,6 +65,23 @@ public class Game {
         this.score = this.score + value;
     }
 
+    public void runGame(){
+        while (hasDice()){
+            rollAllDice();
+            if(hasThrees()){
+                System.out.println("Removing Threes");
+                removeThrees();
+            }
+            else{
+
+                Dice lowestDice = getLowestDice();
+                System.out.println("Removing Lowest Dice" + " " + lowestDice.getValue());
+                addValuetoScore(lowestDice.getValue());
+                removeSingleDice(lowestDice);
+            }
+        }
+    }
+
 
 
 }
