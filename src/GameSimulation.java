@@ -7,7 +7,7 @@ public class GameSimulation {
         this.diceAmount = diceAmount;
         this.simAmount = simAmount;
 
-        //maxscore is if you get 6 for all rolls, 6 * 6 with possibility of 0 because all 3s means 37 possibilities
+        //maxscore is if you get 6 for all rolls, diceamount * 6 with possibility of 0 because all 3s means diceamount * 6 + 1
         this.scoreStorage = new int[diceAmount * 6 + 1];
     }
 
